@@ -1,0 +1,295 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+$blue: #002C71;
+$grey: #8298B9;
+$orange: #FFA640;
+.container-full {
+    margin: 0 auto;
+    width: 100%;
+}
+
+.main {
+    box-shadow: 0 0 4px 0 rgba(172, 172, 172, 0.50);
+    border-radius: 5px;
+    padding: 0;
+    max-height: 800px;
+    margin-top: 30px;
+    .blue_section {
+        background: $blue;
+        border-radius: 5px 5px 0 0;
+        height: 91.5px;
+    }
+    .profil_section {
+        box-shadow: 0 0 4px 0 rgba(172, 172, 172, 0.50);
+        border-radius: 5px;
+        margin-top: -54px;
+        margin-left: 15px;
+        margin-right: 15px;
+        background-color: #fff;
+        &:afte {
+            content: "";
+            position: absolute;
+            background: url(../images/retourn.png);
+            width: 10px;
+            height: 10px;
+            background-size: contain;
+            right: 0;
+            margin-right: 25px;
+            margin-top: 11px;
+        }
+        img {
+            display: inline-block;
+            float: left;
+            width: 70px;
+            height: 70px;
+            object-fit: contain;
+            margin: 20px;
+        }
+        .name {
+            display: inline-block;
+            float: left;
+            h3 {
+                font-size: 18px;
+                color: $blue;
+                margin-top: 38px;
+                margin-bottom: 0;
+            }
+            h4 {
+                color: #8298B9;
+                font-size: 12px;
+                margin: 0;
+            }
+        }
+        .serce {
+            background: url(../images/serce.png);
+            background-repeat: no-repeat;
+            width: 12px;
+            height: 11px;
+            display: inline-block;
+            float: left;
+            background-size: contain;
+            margin-top: 44px;
+            margin-left: 9px;
+            cursor: pointer;
+            transition: all 0.3s ease 0s;
+            &:hover {
+                transform: scale(1.8);
+            }
+            &:active {
+                transform: scale(0.8);
+            }
+        }
+        .share {
+            background: url(../images/retourn.png);
+            background-repeat: no-repeat;
+            width: 14px;
+            height: 14px;
+            display: inline-block;
+            float: right;
+            background-size: contain;
+            cursor: pointer;
+            margin: 15px;
+            transition: all 0.3s ease 0s;
+            &:hover {
+                transform: scale(1.5);
+            }
+        }
+    }
+    .modal-content {
+        padding: 20px;
+        line-height: 30px;
+    }
+}
+
+.number_section {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 20px;
+    .iten {
+        width: 20%;
+        display: inline-block;
+        float: left;
+        padding-left: 20px;
+        padding-right: 20px;
+        .number {
+            font-size: 24px;
+            color: $orange;
+            display: block;
+            text-align: center;
+        }
+        .iten_dsc {
+            color: $grey;
+            font-size: 10px;
+            display: block;
+            text-align: center;
+        }
+    }
+    .iten:nth-of-type(1) {
+        border-right: 1px solid rgba(151, 151, 151, 0.3);
+    }
+    .iten:nth-of-type(2) {
+        border-right: 1px solid rgba(151, 151, 151, 0.3);
+    }
+    .follow {
+        display: inline-block;
+        float: right;
+        margin-right: 50px;
+        width: 134px;
+        height: 46px;
+        background: #FFA640;
+        border-radius: 100px;
+        text-transform: uppercase;
+        font-size: 14px;
+        color: #FFFFFF;
+        letter-spacing: 4.2px;
+        line-height: 46px;
+        text-align: center;
+        cursor: pointer;
+        transition: all 0.3s ease 0s;
+        &:hover {
+            background-color: #fdc88b;
+        }
+        &:active {
+            transform: scale(0.95);
+        }
+    }
+}
+
+#comment_section {
+    max-height: 675px;
+    display: block;
+    box-shadow: 0 0 4px 0 rgba(172, 172, 172, 0.50);
+    border-radius: 5px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 15px;
+    margin-bottom: 50px;
+    padding-bottom: 30px;
+    #hide_comment {
+        display: inline-block;
+        margin-left: 20px;
+        margin-top: 25px;
+        margin-bottom: 25px;
+        font-size: 14px;
+        color: $orange;
+        text-decoration: underline;
+        cursor: pointer;
+    }
+    .comment {
+        height: 490px;
+    }
+}
+
+.comment_iten {
+    display: inline-block;
+    border-bottom: 1px solid #EBEBEB;
+    margin-right: 21px;
+    margin-top: 10px;
+    width: 97%;
+    img {
+        display: inline-block;
+        float: left;
+        width: 40px;
+        height: 40px;
+        margin-left: 20px;
+    }
+    .comment_text {
+        display: inline-block;
+        float: left;
+        width: 68%;
+        margin-left: 11px;
+        margin-bottom: 10px;
+    }
+    .text_name {
+        color: $blue;
+        font-size: 14px;
+    }
+    .text {
+        font-size: 14px;
+        color: #444444;
+        line-height: 21px;
+    }
+}
+
+.add_comment {
+    border-bottom: 2px solid #DBE0E8;
+    margin-left: 20px;
+    margin-right: 27px;
+    margin-top: 50px;
+    input {
+        font-size: 18px;
+        color: #8298B9;
+        border: none;
+        width: 90%;
+        &:focus {
+            outline: none;
+        }
+    }
+    .add {
+        display: inline-block;
+        font-size: 18px;
+        width: 46px;
+        float: right;
+        color: $orange;
+        font-weight: 800;
+        cursor: pointer;
+        background-color: inherit;
+        border: none;
+        transition: all 0.3s ease 0s;
+        &:focus {
+            outline: none;
+        }
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+}
+
+@media screen and (max-width: 790px) {
+    .main {
+        margin: 0;
+        margin-top: 30px;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .number_section .follow {
+        float: none;
+        width: 60%;
+        margin-top: 20px;
+        margin-top: 30px;
+        margin-left: 20%;
+    }
+    .iten_all {
+        display: block;
+        width: 80%;
+        margin-left: 10%;
+    }
+    .iten {
+        width: 30%!important;
+    }
+    .main {
+        max-height: 880px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .main .profil_section img {
+        margin: 0 auto;
+        margin-left: calc(50% - 35px);
+        margin-top: -51px;
+    }
+    .main .profil_section .name {
+        width: 130px;
+        margin-left: calc(50% - 75px);
+        margin-bottom: 20px;
+    }
+    .iten_all {
+        display: block;
+        width: 100%;
+        margin-left: 0;
+    }
+}
