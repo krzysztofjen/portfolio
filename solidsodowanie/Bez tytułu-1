@@ -1,0 +1,20 @@
+<div class="cennik_name"> cennik</div>
+
+.carousel-caption {
+    text-transform: uppercase;
+    width: 400px;
+    background-color: $bordowy;
+    display: block;
+    text-align: left;
+    padding: 10px;
+    margin-left: 40%;
+    margin-bottom: 40px;
+
+}
+
+.carousel-caption h3 {
+    margin: 5px;
+    line-height: 20px;
+    font-size: 24px;
+    font-weight: 800;
+}
