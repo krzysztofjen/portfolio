@@ -1,0 +1,450 @@
+html {
+  box-sizing: border-box;
+  font-family: 'helvetica neue'; }
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #e4feff; }
+
+/* header */
+header {
+  text-align: center;
+  height: 120vh;
+  background: url(../media/header.jpg) bottom center no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; }
+  header h1 {
+    color: #9ad3d6;
+    font-size: 7vw;
+    text-shadow: 3px 4px 0 rgba(0, 0, 0, 0.2); }
+  header h3 {
+    color: #9ad3d6;
+    font-size: 3vw;
+    text-shadow: 3px 4px 0 rgba(0, 0, 0, 0.2); }
+
+/* nav */
+nav {
+  background: #e29ab8;
+  top: 0;
+  width: 100%;
+  transition: all 0.5s;
+  position: fixed;
+  z-index: 1;
+  flex-direction: column;
+  flex: 1; }
+
+.toggleNav {
+  display: none; }
+
+.toggleNav a {
+  color: #9ad3d6;
+  font-weight: 100;
+  letter-spacing: 2px;
+  text-decoration: none;
+  background: rgba(0, 0, 0, 0.2);
+  padding: 20px 5px;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  transition: all 0.5s; }
+
+.toggleNav a:hover {
+  background: rgba(0, 0, 0, 0.3); }
+
+#main.fixed-nav {
+  box-shadow: 0 5px 0 rgba(0, 0, 0, 0.1);
+  background: rgba(226, 154, 184, 0.9); }
+
+a:focus {
+  color: #b3eff3;
+  text-decoration: none;
+  outline: none; }
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex; }
+
+nav li {
+  flex: 1;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+li.logo {
+  max-width: 0px;
+  overflow: hidden;
+  transition: all 1.5s ease-in;
+  background-image: url(../media/logo.png);
+  background-size: contain;
+  background-color: white;
+  background-position: center;
+  background-repeat: no-repeat; }
+
+.fixed-nav li.logo {
+  max-width: 500px; }
+
+nav a {
+  text-decoration: none;
+  padding: 20px;
+  display: inline-block;
+  color: #9ad3d6;
+  font-weight: 900;
+  transition: all 0.2s;
+  text-transform: uppercase; }
+  nav a:hover {
+    color: #85ebf0;
+    text-decoration: none;
+    transform: scale(1.05); }
+
+#content {
+  position: relative;
+  background-color: #e4feff;
+  bottom: 120px; }
+
+/* sekcja o mnie */
+#o_mnie {
+  position: relative;
+  font-size: 18px;
+  height: 90vh;
+  overflow: hidden;
+  margin-bottom: 100px; }
+
+#oMnie_zdjecie {
+  position: absolute;
+  background-image: url(../media/nas1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 70%;
+  height: 100%;
+  left: 0;
+  top: 30px;
+  background-position: center; }
+
+#oMnie_opis {
+  padding: 20px;
+  position: absolute;
+  width: 50%;
+  right: 0px;
+  top: 250px;
+  background-color: rgba(214, 237, 239, 0.7);
+  color: #365d5f;
+  padding: 30px; }
+
+/* peryskop */
+.large-window {
+  height: 540px;
+  background-image: url(../media/peryskop.jpg);
+  margin-top: 100px;
+  margin-bottom: 100px;
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat; }
+  .large-window .window-tint {
+    background-color: rgba(236, 174, 207, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0; }
+    .large-window .window-tint h4 {
+      font-size: 40px;
+      color: #287175;
+      text-align: center; }
+
+/* slaider z certyfikatami */
+.thumbnails li > .fff .caption {
+  background: #fff !important;
+  padding: 10px; }
+
+/* Page Header */
+.page-header {
+  background: #f9f9f9;
+  margin: -30px -40px 40px;
+  padding: 20px 40px;
+  border-top: 4px solid #ccc;
+  color: #999;
+  text-transform: uppercase; }
+
+.page-header h3 {
+  line-height: 0.88rem;
+  color: #000; }
+
+ul.thumbnails {
+  margin-bottom: 0px; }
+
+/* Thumbnail Box */
+.caption h4 {
+  color: #444; }
+
+.caption p {
+  color: #999; }
+
+/* kursy */
+.title_section {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-size: 40px;
+  color: #9ad3d6;
+  position: relative; }
+
+.title_section:after {
+  content: '';
+  width: 160px;
+  display: block;
+  position: absolute;
+  right: calc(50% - 80px);
+  top: 60px;
+  border: 1px solid #41c5cc; }
+
+#kursy {
+  margin-top: 50px;
+  background-color: rgba(154, 211, 214, 0.4);
+  box-shadow: 1px 1px 5px 4px rgba(154, 211, 214, 0.4); }
+
+.thumbnail {
+  height: 108px;
+  border: none;
+  background-color: transparent;
+  margin-top: 20px; }
+  .thumbnail img {
+    width: 100%;
+    max-height: 100%; }
+
+.carousel-control {
+  top: -40px; }
+
+.about_navigation {
+  display: none;
+  background-image: none !important;
+  font-size: 110px;
+  width: 6%; }
+
+.about_slaider:hover .about_navigation {
+  display: block; }
+
+.carousel-control {
+  top: -20px; }
+
+/* panel z kursami */
+.info_cointainer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px; }
+  .info_cointainer spam {
+    font-size: 16px;
+    color: #2c8b90;
+    width: 70%;
+    margin-left: 15%;
+    text-align: center;
+    border-bottom: 1px solid #41c5cc;
+    border-top: 1px solid #41c5cc;
+    padding: 26px 20px;
+    margin-bottom: 40px; }
+
+.tabs {
+  margin: 0;
+  padding: 0;
+  zoom: 1;
+  background-color: rgba(220, 102, 163, 0.7);
+  text-align: center;
+  display: flex;
+  flex-flow: column; }
+
+.tabs li {
+  list-style: none;
+  padding: 0;
+  margin: 0; }
+
+.tabs a {
+  display: block;
+  text-decoration: none;
+  padding: 3px 5px;
+  outline: none;
+  color: #f2eef3;
+  font-size: 17px; }
+
+.tabs a:hover {
+  text-decoration: none; }
+
+.tabs .now {
+  background-color: #f1b3b6;
+  color: #f5eaf0;
+  position: relative; }
+
+.kafelContainer {
+  clear: both;
+  margin-bottom: 25px;
+  background-color: white;
+  font-size: 16px; }
+
+.kafel {
+  padding: 150px 50px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  font-size: 20px;
+  margin-top: -1px;
+  text-align: center; }
+
+#kafel1 {
+  background-image: url(../media/metoda1.jpg); }
+
+#kafel2 {
+  color: #eae2e6;
+  background-image: url(../media/metoda2.jpg); }
+
+#kafel3 {
+  color: #6b6b6b;
+  background-image: url(../media/metoda3.jpg); }
+
+#kafel4 {
+  background-image: url(../media/metoda4.jpg); }
+
+#kafel5 {
+  color: #e6e6e6;
+  background-image: url(../media/metoda5.jpg); }
+
+/* oferta*/
+#oferta {
+  margin-bottom: 200px; }
+
+#oferta_item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: stretch;
+  margin-top: 100px;
+  padding: 50px;
+  background-image: url(../media/klocki.jpg);
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.reaveal-content {
+  display: inline-block;
+  font-size: 18px;
+  text-align: center;
+  padding-top: 25px;
+  position: relative;
+  overflow: hidden;
+  opacity: 0.85;
+  cursor: pointer;
+  flex-basis: 50%;
+  border: 2px solid transparent; }
+
+.hide_block {
+  color: white;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: left 0.7s ease; }
+
+.reaveal-content:hover .hide_block {
+  left: -100%; }
+
+.ofert_it {
+  background-color: #dd568e;
+  display: block;
+  height: 100%;
+  padding: 10px; }
+
+.ofert_bg {
+  background-color: #e298bd;
+  padding: 10px; }
+
+/* footer*/
+footer {
+  background: #e29ab8;
+  color: #e3dbe8;
+  padding: 40px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: -1; }
+  footer strong {
+    font-size: 35px; }
+  footer .kontakt_name {
+    padding-left: 60px; }
+
+@media all and (max-width: 700px) {
+  header h1 {
+    font-size: 10vh; }
+  header h3 {
+    font-size: 5vh; }
+
+  nav {
+    height: auto; }
+
+  .flex-nav ul {
+    flex-wrap: wrap; }
+
+  .flex-nav li {
+    flex: 1 1 50%; }
+
+  .carousel .thumbnail img {
+    margin-top: 20px; } }
+@media all and (max-width: 500px) {
+  header h1 {
+    font-size: 11vh; }
+  header h3 {
+    font-size: 3vh; }
+
+  nav {
+    position: fixed; }
+
+  #oMnie_zdjecie {
+    width: 100%; }
+
+  #oMnie_opis {
+    width: 100%;
+    text-align: center;
+    padding: 0; }
+
+  .toggleNav {
+    display: block;
+    color: #9ad1d3 !important;
+    cursor: pointer; }
+
+  .flex-nav li {
+    flex-basis: 100%; }
+
+  .flex-nav ul {
+    display: none; }
+
+  .flex-nav ul.open {
+    display: flex; }
+
+  .carousel-control {
+    top: 0; }
+
+  .thumbnail {
+    height: auto;
+    margin-top: none;
+    width: 80px;
+    padding: 0; }
+
+  .title_section {
+    font-size: 28px; }
+
+  .reaveal-content {
+    flex-basis: 100%; }
+
+  .ofert_bg {
+    padding: 20px; } }
+
+/*# sourceMappingURL=main.css.map */
