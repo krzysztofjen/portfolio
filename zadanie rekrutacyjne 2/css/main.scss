@@ -1,0 +1,234 @@
+    $color_red: #ec1c24;
+    $color_grey: #bdbdbd;
+    $color_greyBG: #f5f5f5;
+    
+
+    @mixin border {
+      border-bottom: 1px solid rgba(128, 128, 128, 0.4);
+    }
+
+    
+    html {
+      box-sizing: border-box;
+    }
+
+    body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    }
+header {
+  margin-bottom: 10px;
+  padding: 0;
+  .red {
+    background-color: $color_red;
+    height: 80px;
+    margin-left: 16%;
+  }
+  .text {
+    display: block;
+    font-size: 12px;
+    padding-top: 10px;
+    padding-left: 40px;
+    color: $color_grey;
+  }
+}
+
+.section__one {
+  padding: 0;
+  .section__one_title {
+      margin-left: 25%;
+      margin-bottom: 40px;
+  
+  h1 {
+    margin-top: -50px;
+    margin-left: 90px;
+    font-weight: 100;
+  }
+  .faq {
+    height: 130px;
+    background-image: url(../images/faq.png);
+    background-size: contain;
+    background-position: 7px 0px;
+    background-repeat: no-repeat;
+    margin-top: 35px;
+  }
+}
+}
+.question {
+  padding: 0;
+}
+#accordion {
+  .panel-heading {
+    padding-left: 25%;
+    a {
+      color: $color_grey;
+
+      &:hover{
+        text-decoration: none;
+      }
+      &:focus {
+        text-decoration: none;
+        outline-offset: none;
+      }
+      
+    }
+
+    .table_arrow {
+      display: inline-block;
+      float: right;
+      height: 20px;
+      width: 20px;
+      background-image: url(../images/arrow.png);
+      background-size: contain;
+      background-repeat: no-repeat;  
+    }
+    .tab_number{
+      padding-right:  15px;
+      display: inline-block;
+      float: left;
+    }
+    
+    p {
+      display: inline-block;
+      &::first-letter{
+        padding-right: 15px;
+      }
+    }
+  }
+  .panel-body {
+    padding-left: 25%;
+    font-size: 12px;
+    border: none;
+    color: $color_grey;
+    background-color: $color_greyBG;
+  }
+  .panel {
+    border: none;
+    box-shadow: none;
+    transition: all ease-in 0.2s;
+    &:hover {
+      background-color: $color_red;
+    }
+  }
+
+
+}
+
+.rotate{
+  -webkit-transform: rotate(180deg);  /* Chrome, Safari, Opera */
+    -moz-transform: rotate(180deg);  /* Firefox */
+    -ms-transform: rotate(180deg);  /* IE 9 */
+      transform: rotate(180deg);  /* Standard syntax */    
+  }
+  .active_table {
+    background-color: $color_greyBG;
+    border-top: 1px solid rgba(128, 128, 128, 0.3) !important;
+  }
+  .active_table .tab_number {
+    color: $color_red;
+    font-weight: 700;
+  }
+
+  .active_table a {
+color: #5f5e5e !important;
+  }
+
+.section__two {
+  background-color: #000000;
+  color: #fff;
+  border-top-left-radius: 20px;
+  height: 100vh;
+    h1 {
+      font-size: 28px;
+      &:nth-child(2) {
+        color: $color_grey;
+        font-weight: 100;
+      }
+    }
+    ul {
+      margin-top: 20px;
+      padding-left: 0px;
+      width: 60%;
+
+      li:first-child {
+        
+                      &:after {
+                        content: "";
+                        position: absolute;
+                        background: url(../images/file_red.png);
+                        width: 15px;
+                        height: 20px;
+                        background-size: contain;
+                        background-repeat: no-repeat;
+                        left: 95%
+                      }
+                    }
+      
+        li {
+            list-style: none;
+            color: $color_grey;
+            border-bottom: 1px solid rgba(189, 189, 189, 0.4);
+            padding: 6px 0;
+            position: relative;
+
+              &:after {
+                content: "";
+                position: absolute;
+                background: url(../images/file_black.png);
+                width: 15px;
+                height: 20px;
+                background-size: contain;
+                background-repeat: no-repeat;
+                left: 95%;
+            
+              }
+            }
+
+            
+   }
+}
+
+@media all and (max-width:992px) {
+  header {
+    .red {
+      margin-left: 0;
+    }
+    .text {
+      text-align: center;
+    }
+  }
+  
+
+  .section__two {
+    border-top-left-radius: 0;
+    text-align: center;
+    padding-top: 20px;
+     ul  {
+       width: 100%;
+       margin-top: 60px;
+     }
+  }
+}
+
+@media all and (max-width:650px) {
+  .section__one {
+    .section__one_title h1 {
+      margin-left: 0;
+    }
+  }
+  #accordion  {
+    .panel-heading{
+    padding-left: 5px;
+    .table_arrow{
+      float: none;
+    }
+    p {
+      display: block;
+    }
+  }
+  .panel-body {
+    padding-left: 5px;
+  }
+}
+}

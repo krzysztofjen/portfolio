@@ -1,0 +1,167 @@
+html {
+  box-sizing: border-box; }
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif; }
+
+header {
+  margin-bottom: 10px;
+  padding: 0; }
+  header .red {
+    background-color: #ec1c24;
+    height: 80px;
+    margin-left: 16%; }
+  header .text {
+    display: block;
+    font-size: 12px;
+    padding-top: 10px;
+    padding-left: 40px;
+    color: #bdbdbd; }
+
+.section__one {
+  padding: 0; }
+  .section__one .section__one_title {
+    margin-left: 25%;
+    margin-bottom: 40px; }
+    .section__one .section__one_title h1 {
+      margin-top: -50px;
+      margin-left: 90px;
+      font-weight: 100; }
+    .section__one .section__one_title .faq {
+      height: 130px;
+      background-image: url(../images/faq.png);
+      background-size: contain;
+      background-position: 7px 0px;
+      background-repeat: no-repeat;
+      margin-top: 35px; }
+
+.question {
+  padding: 0; }
+
+#accordion .panel-heading {
+  padding-left: 25%; }
+  #accordion .panel-heading a {
+    color: #bdbdbd; }
+    #accordion .panel-heading a:hover {
+      text-decoration: none; }
+    #accordion .panel-heading a:focus {
+      text-decoration: none;
+      outline-offset: none; }
+  #accordion .panel-heading .table_arrow {
+    display: inline-block;
+    float: right;
+    height: 20px;
+    width: 20px;
+    background-image: url(../images/arrow.png);
+    background-size: contain;
+    background-repeat: no-repeat; }
+  #accordion .panel-heading .tab_number {
+    padding-right: 15px;
+    display: inline-block;
+    float: left; }
+  #accordion .panel-heading p {
+    display: inline-block; }
+    #accordion .panel-heading p::first-letter {
+      padding-right: 15px; }
+#accordion .panel-body {
+  padding-left: 25%;
+  font-size: 12px;
+  border: none;
+  color: #bdbdbd;
+  background-color: #f5f5f5; }
+#accordion .panel {
+  border: none;
+  box-shadow: none;
+  transition: all ease-in 0.2s; }
+  #accordion .panel:hover {
+    background-color: #ec1c24; }
+
+.rotate {
+  -webkit-transform: rotate(180deg);
+  /* Chrome, Safari, Opera */
+  -moz-transform: rotate(180deg);
+  /* Firefox */
+  -ms-transform: rotate(180deg);
+  /* IE 9 */
+  transform: rotate(180deg);
+  /* Standard syntax */ }
+
+.active_table {
+  background-color: #f5f5f5;
+  border-top: 1px solid rgba(128, 128, 128, 0.3) !important; }
+
+.active_table .tab_number {
+  color: #ec1c24;
+  font-weight: 700; }
+
+.active_table a {
+  color: #5f5e5e !important; }
+
+.section__two {
+  background-color: #000000;
+  color: #fff;
+  border-top-left-radius: 20px;
+  height: 100vh; }
+  .section__two h1 {
+    font-size: 28px; }
+    .section__two h1:nth-child(2) {
+      color: #bdbdbd;
+      font-weight: 100; }
+  .section__two ul {
+    margin-top: 20px;
+    padding-left: 0px;
+    width: 60%; }
+    .section__two ul li:first-child:after {
+      content: "";
+      position: absolute;
+      background: url(../images/file_red.png);
+      width: 15px;
+      height: 20px;
+      background-size: contain;
+      background-repeat: no-repeat;
+      left: 95%; }
+    .section__two ul li {
+      list-style: none;
+      color: #bdbdbd;
+      border-bottom: 1px solid rgba(189, 189, 189, 0.4);
+      padding: 6px 0;
+      position: relative; }
+      .section__two ul li:after {
+        content: "";
+        position: absolute;
+        background: url(../images/file_black.png);
+        width: 15px;
+        height: 20px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        left: 95%; }
+
+@media all and (max-width: 992px) {
+  header .red {
+    margin-left: 0; }
+  header .text {
+    text-align: center; }
+
+  .section__two {
+    border-top-left-radius: 0;
+    text-align: center;
+    padding-top: 20px; }
+    .section__two ul {
+      width: 100%;
+      margin-top: 60px; } }
+@media all and (max-width: 650px) {
+  .section__one .section__one_title h1 {
+    margin-left: 0; }
+
+  #accordion .panel-heading {
+    padding-left: 5px; }
+    #accordion .panel-heading .table_arrow {
+      float: none; }
+    #accordion .panel-heading p {
+      display: block; }
+  #accordion .panel-body {
+    padding-left: 5px; } }
+
+/*# sourceMappingURL=main.css.map */
