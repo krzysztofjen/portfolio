@@ -1,0 +1,190 @@
+html {
+  box-sizing: border-box; }
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif; }
+
+.container-fluid {
+  padding: 0;
+  margin: 0; }
+
+.first__section {
+  width: 100%;
+  background-color: #282828; }
+
+nav {
+  background-color: #282828; }
+  nav .icon_menu {
+    color: #ff6131; }
+  nav button:focus {
+    outline: none; }
+  nav .logo {
+    width: 160px;
+    height: 50px;
+    margin-top: 20px;
+    margin-left: 30px;
+    background-image: url(../images/logo.png);
+    background-size: contain;
+    background-position: top;
+    background-repeat: no-repeat; }
+  nav a {
+    color: #cacaca;
+    font-size: 12px; }
+    nav a:hover {
+      color: #ff6131; }
+  nav ul {
+    margin-top: 20px; }
+
+header {
+  background-color: #282828;
+  padding-bottom: 60px; }
+
+.header__text {
+  color: #ffffff;
+  padding-left: 40px; }
+  .header__text h1 {
+    text-transform: uppercase;
+    font-weight: 100;
+    font-size: 85px;
+    margin-bottom: 0;
+    letter-spacing: -4px;
+    color: #cacaca; }
+  .header__text h1:first-child {
+    color: white;
+    margin-top: 40px;
+    font-weight: 900;
+    position: relative; }
+    .header__text h1:first-child:after {
+      content: "";
+      position: absolute;
+      background: url(../images/kropka.png);
+      width: 20px;
+      height: 14px;
+      background-size: contain;
+      background-repeat: no-repeat;
+      top: 70px;
+      background-position: 4px; }
+  .header__text h2 {
+    text-transform: uppercase;
+    font-weight: 100;
+    color: #cacaca; }
+    .header__text h2 span {
+      font-weight: 900;
+      color: white; }
+  .header__text p {
+    font-size: 12px;
+    color: #cacaca; }
+
+.header__image {
+  position: relative; }
+  .header__image .header__phone {
+    background-image: url(../images/phone.png);
+    background-size: contain;
+    background-position: top;
+    background-repeat: no-repeat;
+    width: 236px;
+    height: 522px;
+    position: absolute;
+    top: 30px;
+    left: 115px; }
+
+#love_todo {
+  border-bottom: 1px solid rgba(128, 128, 128, 0.4);
+  padding-bottom: 100px; }
+
+.love__header {
+  color: #4e4e4e;
+  padding-left: 40px;
+  padding-top: 40px; }
+  .love__header h1 {
+    text-transform: uppercase;
+    font-weight: 100;
+    font-size: 30px; }
+    .love__header h1 span {
+      font-weight: 900; }
+  .love__header h2 {
+    font-size: 12px;
+    color: #cacaca; }
+
+.love__row {
+  margin-top: 50px;
+  margin-left: 10px; }
+
+.love__item {
+  color: #4e4e4e;
+  padding-bottom: 40px; }
+  .love__item img {
+    width: 90px;
+    float: left; }
+  .love__item span {
+    display: block;
+    padding-top: 40px;
+    margin-left: 110px; }
+    .love__item span h3 {
+      text-transform: uppercase;
+      font-size: 14px;
+      font-weight: 700; }
+    .love__item span p {
+      font-size: 10px; }
+
+#third__section {
+  margin-top: 80px;
+  margin-bottom: 100px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.4); }
+  #third__section .third__text h1 {
+    font-size: 13px;
+    margin-bottom: 70px;
+    margin-left: 10px;
+    color: #cacaca; }
+  #third__section .third__text .third__item img {
+    width: 35px;
+    height: 35px;
+    margin-bottom: 15px; }
+  #third__section .third__text .third__item p {
+    font-size: 10px;
+    color: #cacaca; }
+    #third__section .third__text .third__item p:after {
+      content: "";
+      position: absolute;
+      background: url(../images/kropka.png);
+      width: 3px;
+      height: 100%;
+      background-size: contain;
+      background-repeat: no-repeat;
+      top: 30px;
+      left: 130px; }
+  #third__section .third__photo {
+    min-height: 300px; }
+    #third__section .third__photo .photo__block {
+      background-image: url(../images/shape.png);
+      background-size: contain;
+      background-position: top;
+      background-repeat: no-repeat;
+      position: absolute;
+      top: 40px;
+      left: -90px;
+      width: 100%;
+      height: 100%; }
+
+@media all and (max-width: 768px) {
+  .header__image {
+    display: none; }
+
+  nav .logo {
+    width: 120px; }
+
+  .header__text h1 {
+    font-size: 60px; }
+  .header__text h1:first-child:after {
+    height: 11px;
+    top: 48px; }
+  .header__text h2 {
+    font-size: 20px; }
+
+  #third__section .third__photo .photo__block {
+    left: 0; } }
+
+/*# sourceMappingURL=main.css.map */
